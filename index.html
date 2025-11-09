@@ -35,10 +35,8 @@
         }
 
         /* Header with Image */
-                .header-with-image {
-            background: linear-gradient(rgba(44, 85, 48, 0.9), rgba(74, 124, 89, 0.9)), url('https://via.placeholder.com/1920x400/4a7c59/ffffff?text=Черноголовка');
-            background-size: cover;
-            background-position: center;
+               .header-with-image {
+            background: #000000;
             color: white;
             padding: 60px 0;
             text-align: center;
@@ -47,53 +45,53 @@
         .header-content {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 30px;
             align-items: center;
         }
 
         .header-title h1 {
             font-size: 3rem;
             margin-bottom: 15px;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
             font-weight: 700;
+            color: #ffffff;
         }
 
         .header-title p {
             font-size: 1.4rem;
-            opacity: 0.95;
-            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
-            font-weight: 500;
+            font-weight: 400;
+            color: #cccccc;
         }
 
         .header-source {
-            background: rgba(255,255,255,0.25);
+            background: #1a1a1a;
             padding: 20px 30px;
-            border-radius: 12px;
-            margin: 20px 0;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            margin: 10px 0;
+            border: 1px solid #333333;
         }
 
         .header-source p {
             font-size: 1.1rem;
             margin-bottom: 5px;
+            color: #cccccc;
         }
 
         .header-source strong {
             font-weight: 600;
+            color: #ffffff;
         }
 
         .header-source em {
-            font-style: italic;
-            opacity: 0.9;
+            font-style: normal;
+            color: #999999;
         }
 
         .nav-with-icons {
             display: flex;
-            gap: 20px;
+            gap: 30px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         .nav-item {
@@ -102,27 +100,38 @@
             align-items: center;
             text-decoration: none;
             color: white;
-            padding: 15px;
-            border-radius: 10px;
-            background: rgba(255,255,255,0.15);
-            backdrop-filter: blur(5px);
+            padding: 0;
+            background: transparent;
             transition: all 0.3s;
-            min-width: 120px;
+            min-width: 80px;
         }
 
-        .nav-item:hover {
-            background: rgba(255,255,255,0.2);
-            transform: translateY(-3px);
+        .nav-square {
+            width: 60px;
+            height: 60px;
+            background: #1a1a1a;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            border: 1px solid #333333;
+            transition: all 0.3s;
+        }
+
+        .nav-item:hover .nav-square {
+            background: #2a2a2a;
+            transform: translateY(-2px);
         }
 
         .nav-icon {
-            font-size: 2rem;
-            margin-bottom: 8px;
+            font-size: 1.8rem;
         }
 
         .nav-text {
             font-size: 0.9rem;
-            font-weight: 600;
+            font-weight: 500;
+            color: #cccccc;
         }
 
         /* Sections */
