@@ -63,13 +63,17 @@
         }
 
         .header-source {
-            background: #1a1a1a;
-            padding: 20px 30px;
-            border-radius: 8px;
+            background: transparent;
+            padding: 0;
             margin: 10px 0;
-            border: 1px solid #333333;
         }
 
+        .yellow-text {
+            color: #FFD700;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            font-weight: 400;
+}
         .header-source p {
             font-size: 1.1rem;
             color: #cccccc;
@@ -384,20 +388,26 @@
                 </div>
                 
                 <div class="header-source">
-                    <p>Превращаем официальный отчёт в красивые графики. Данные из постановления № 1121 от 13.10.2025. Проект не связан с администрацией.</p>
+                   <p class="yellow-text">Превращаем официальный отчёт в красивые графики. Данные из постановления № 1121 от 13.10.2025. Проект не связан с администрацией.</p>
                 </div>
                 
                 <nav class="nav-with-icons">
                     <a href="#population" class="nav-item">
-                        <div class="nav-icon">👥</div>
+                        <div class="nav-square">
+                            <div class="nav-icon">👥</div>
+                        </div>
                         <div class="nav-text">Население</div>
                     </a>
                     <a href="#children" class="nav-item">
-                        <div class="nav-icon">👶</div>
+                        <div class="nav-square">
+                            <div class="nav-icon">👶</div>
+                        </div>
                         <div class="nav-text">Дети</div>
                     </a>
                     <a href="#economy" class="nav-item">
-                        <div class="nav-icon">💼</div>
+                        <div class="nav-square">
+                            <div class="nav-icon">💼</div>
+                        </div>
                         <div class="nav-text">Экономика</div>
                     </a>
                 </nav>
